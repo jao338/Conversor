@@ -44,7 +44,6 @@ h1{
     width: 150px;
 }
 
-
 .cards{
     display: flex;
     justify-content: center;
@@ -65,6 +64,12 @@ h1{
     text-align: end;
 }
 
+.select-right,
+.select-left{
+    width: 80px;
+    height: 24px;
+    border: 1px solid 919090;
+}
 
 .value{
     display: flex;
@@ -80,7 +85,13 @@ h1{
     margin-bottom: 32px;
     border: 1px solid #919090;
     border-radius: 8px;
+    outline: none;
+    text-align: center;
+    font-size: 16pt;
+}
 
+.value-left input:focus{
+    border: 1px solid green;
 }
 
 .value-right input{
