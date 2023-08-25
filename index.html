@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <title>Conversor</title>
 </head>
 <body>
@@ -13,20 +14,64 @@
         <div class="content">
             <h1>Conversor de unidades e medidas</h1>
 
-            <input type="checkbox" name="unidade">
-            <label for="unidade">Unidade</label>
+           <div class="checkbox">
 
+               <div class="checkbox-inputs">
 
-            <input type="checkbox" name="Moeda">
-            <label for="moeda">Moeda</label>
+                    <div class="checkbox-inputs-left">
+                        <input type="checkbox" name="unidade">
+                        <label for="unidade">Unidade</label>
+                    </div>
+
+                    <div class="checkbox-inputs-right">
+                        <input type="checkbox" name="Moeda">
+                        <label for="moeda">Moeda</label>
+                    </div>
+                    
+               </div>
+
+           </div>
 
             <div class="cards">
-                <div class="card-left">Unidade a ser convertida</div>
-                <div class="card-right">Unidade convertida</div>
-            </div>
-            <div class="value">Valor</div>
+                <div class="card-left">
 
-            <button class="btn-convert">Converter</button>
+                    <select name="select-left">
+
+                        <option value="">BRL</option>
+                        <option value="">USD</option>
+                        <option value="">EUR</option>
+
+                    </select>
+
+                </div>
+                <div class="card-right">
+
+                    <select name="select-right">
+
+                        <option value="">BRL</option>
+                        <option value="">USD</option>
+                        <option value="">EUR</option>
+
+                    </select>
+
+                </div>
+            </div>
+            <div class="value">
+
+                <div class="value-left">
+                    <input type="text">
+                </div>
+
+                <button class="btn-convert">Converter</button>
+
+                <div class="value-right">
+
+                    <textarea name="" class="value-right-textarea" disabled></textarea>
+                    
+                </div>
+
+            </div>
+
         </div>
         
     </main>

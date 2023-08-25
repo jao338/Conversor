@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 main{
@@ -16,15 +17,106 @@ main{
     text-align: center;
 }
 
-.value{
+h1{
+    font-size: 32pt;
+    margin-bottom: 32px;
+}
+
+
+.checkbox{
     display: flex;
     justify-content: center;
 }
 
-.cards{
+.checkbox-inputs{
     display: flex;
+    width: 300px;
+    margin-bottom: 32px;
 }
 
-.card-left, .card-right{
-    flex: 1;
+.checkbox-inputs-left{
+    text-align: start;
+    width: 150px;
+}
+
+.checkbox-inputs-right{
+    text-align: end;
+    width: 150px;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.card-left,
+.card-right{
+    width: 150px;
+
+}
+
+.card-left{
+    text-align: start;
+}
+
+.card-right{
+    text-align: end;
+}
+
+
+.value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.value-left input{
+
+    width: 300px;
+    height: 80px;
+    margin-bottom: 32px;
+    border: 1px solid #919090;
+    border-radius: 8px;
+
+}
+
+.value-right input{
+    width: 150px;
+    height: 40px;
+}
+
+.value-right-textarea{
+    resize: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.btn-convert{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #919090;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    font-size: 12pt;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+
+}
+
+.btn-convert:hover{
+
+    opacity: .8;
+
+}
+
+.btn-convert:active{
+    width: 140px;
+    height: 30px;
+    font-size: 10pt;
 }
