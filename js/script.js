@@ -21,7 +21,7 @@ window.onload = function(){
                 case "USD":
 
                 moedas[index].value = result.USD;
-                    
+
                     break;
             
                 case "CAD":
@@ -49,7 +49,7 @@ window.onload = function(){
                 case "ARS":
     
                     moedas[index].value = result.ARS;
-                        
+ 
                     break;
                 case "UYU":
     
@@ -57,8 +57,9 @@ window.onload = function(){
                         
                     break;
             }
-    
+
         }
+
     })
 
     .catch(() => {
@@ -69,30 +70,30 @@ window.onload = function(){
     });
 
     loadOptions();
-
 }
 
 function loadOptions(){
 
     //Carrega todas as options do select com as informações do array "moedas" 
 
-    document.querySelectorAll('.options').forEach((item, index) => {
+    document.querySelectorAll('.options').forEach((item) => {
 
         for (let index = 0; index < moedas.length; index++) {
 
-            
+
         let option = document.createElement('option');
 
         option.setAttribute('data-nome', moedas[index].name);
-        option.setAttribute('value', moedas[index].value)
+        option.setAttribute('value', moedas[index].value);
         option.innerHTML = moedas[index].name;
 
         item.appendChild(option)
 
-
         }
 
     })
+
+    console.log(moedas)
 }
 
 function errorMessage(){
@@ -100,4 +101,5 @@ function errorMessage(){
     alert('Algo deu errado')
 
 }
+
 

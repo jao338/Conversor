@@ -1,4 +1,4 @@
-const moedas = [
+let moedas = [
 
     dolarA = {
         name: 'USD',
@@ -38,7 +38,7 @@ const moedas = [
 
 ]
 
-const temperatura = [
+let temperatura = [
 
     celsius = {
         name: 'Celsius',
