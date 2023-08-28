@@ -15,8 +15,8 @@ const moedas = [
         value: 0
     },
 
-    btc = {
-        name: 'BTC',
+    kwanza = {
+        name: 'AOA',
         value: 0
     },
 

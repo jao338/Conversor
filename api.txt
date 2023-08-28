@@ -1,3 +1,3 @@
-https://open.er-api.com/v6/latest/
+https://open.er-api.com/v6/latest
 https://open.er-api.com/v6/latest/${moeda}
-https://www.exchangerate-api.com/docs/freehttps://www.exchangerate-api.com/docs/free
+https://www.exchangerate-api.com/docs/standard-requests
